@@ -17,6 +17,7 @@ namespace UnityEngine
 public class Character : MonoBehaviour
 {
     public float m_groundContact;
+    public bool IsOnGround() => false;
     public virtual void Damage(HitData hit) { }
     public virtual void UpdateGroundContact() { }
 }
